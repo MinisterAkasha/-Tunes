@@ -43,8 +43,8 @@ export const videoPlayerInit = () => {
 
 		let minutePassed = Math.floor(currentTime / 60),
 				secondsPassed = Math.floor(currentTime % 60),
-				minuteTotal = Math.floor(duration % 60),
-				secondsTotal = Math.floor(duration / 60);
+				minuteTotal = Math.floor(duration / 60),
+				secondsTotal = Math.floor(duration % 60);
 	
 		videoTimePassed.textContent = `${addZero(minutePassed)}:${addZero(secondsPassed)}`;
 		videoTimeTotal.textContent = `${addZero(minuteTotal)}:${addZero(secondsTotal)}`;
